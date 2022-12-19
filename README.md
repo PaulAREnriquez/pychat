@@ -1,2 +1,4 @@
 Hi! This is pychat v0.1
-`max_tokens`ssh
+
+Install requirements from requirements.txt
+`pip install -r requirements.txt`

@@ -3,11 +3,6 @@ import os
 
 OPEN_API_KEY = "OPENAI_API_KEY"
 
-# todo
-# handle detection of OPEN_API_KEY availability
-# max_tokens can be set as a parameter outside with a default value
-#
-
 
 def main():
 
