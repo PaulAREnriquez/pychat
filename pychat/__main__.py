@@ -18,17 +18,21 @@ def main():
         exit(-1)
 
     print("Pychat v0.1")
+
     query = input("Input: ")
+    if query != "":
 
-    max_tokens = 4000
-    engine = "text-davinci-003"
+        max_tokens = 4000
+        engine = "text-davinci-003"
 
-    completion = openai.Completion.create(
-        engine=engine, prompt=query, max_tokens=max_tokens
-    )
+        completion = openai.Completion.create(
+            engine=engine, prompt=query, max_tokens=max_tokens
+        )
 
-    output = completion.choices[0].text
-    print(f"Output: {output}")
+        output = completion.choices[0].text
+        print(f"Output: {output}")
+    else:
+        print("You did not ask anything.")
 
 
 if __name__ == "__main__":
