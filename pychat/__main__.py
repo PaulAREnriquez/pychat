@@ -16,12 +16,14 @@ def main():
     if open_ai_api_key == None:
         print('OPENAI_API_KEY required')
         exit(-1)
-        
+
     print("Pychat v0.1")
     query = input("Input: ")
 
+    max_tokens = 4000
+
     completion = openai.Completion.create(
-        engine="text-davinci-003", prompt=query, max_tokens=4000
+        engine="text-davinci-003", prompt=query, max_tokens = max_tokens
     )
 
     output = completion.choices[0].text
