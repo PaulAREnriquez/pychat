@@ -1,0 +1,5 @@
+# ignoring the environment
+pychat-env
+
+# ignoring all pycache folders
+__pycache__
